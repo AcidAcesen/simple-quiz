@@ -15,5 +15,11 @@ desktop.ini
 *.log
 .cache/
 
+# Archives
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
 # Claude Code
 .claude/
