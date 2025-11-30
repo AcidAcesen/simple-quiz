@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz System - Select Exam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quiz & Flashcard System</h1>
+            <p>Select an exam to begin</p>
+        </header>
+
+        <main id="exam-list" class="exam-list">
+            <div class="loading">Loading available exams...</div>
+        </main>
+    </div>
+
+    <script>
+        // Load available exams
+        const exams = [
+            {
+                id: 'comptia_sec_plus',
+                name: 'CompTIA Security+ SY0-701',
+                description: '100 Questions & Answers practice collection',
+                dataFile: 'src/mats_json/comptia_sec_plus.json'
+            }
+            // Add more exams here by adding new JSON files to src/mats_json/
+        ];
+
+        const examListContainer = document.getElementById('exam-list');
+
+        // Display exams
+        function displayExams() {
+            examListContainer.innerHTML = '';
+
+            exams.forEach(exam => {
+                const examCard = document.createElement('div');
+                examCard.className = 'exam-card';
+                examCard.innerHTML = `
+                    <h2>${exam.name}</h2>
+                    <p>${exam.description}</p>
+                    <div class="exam-buttons">
+                        <button onclick="startExam('${exam.dataFile}', '${exam.name}', null)" class="btn-primary">Start Full Quiz</button>
+                        <button onclick="startExam('${exam.dataFile}', '${exam.name}', 10)" class="btn-secondary">Quick Quiz (10 Questions)</button>
+                    </div>
+                `;
+                examListContainer.appendChild(examCard);
+            });
+        }
+
+        function startExam(dataFile, name, questionLimit) {
+            // Store exam info in sessionStorage
+            sessionStorage.setItem('examDataFile', dataFile);
+            sessionStorage.setItem('examName', name);
+            sessionStorage.setItem('questionLimit', questionLimit);
+            // Navigate to quiz page
+            window.location.href = 'quiz.html';
+        }
+
+        // Initialize
+        displayExams();
+    </script>
+</body>
+</html>

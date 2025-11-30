@@ -1,0 +1,19 @@
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.log
+.cache/
+
+# Claude Code
+.claude/

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="exam-title">Loading...</h1>
+            <div class="progress-bar">
+                <div id="progress" class="progress-fill"></div>
+            </div>
+            <p id="question-counter">Question 1 of 100</p>
+        </header>
+
+        <main>
+            <div id="quiz-container" class="quiz-container">
+                <div class="loading">Loading quiz...</div>
+            </div>
+
+            <div id="results-container" class="results-container" style="display: none;">
+                <h2>Quiz Complete!</h2>
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span id="final-score">0</span>
+                        <span class="score-label">%</span>
+                    </div>
+                </div>
+                <div id="score-breakdown"></div>
+                <div class="results-actions">
+                    <button onclick="window.location.href='index.html'" class="btn-primary">Back to Exams</button>
+                    <button onclick="restartQuiz()" class="btn-secondary">Retake Quiz</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1241 @@
+{
+  "title": "CompTIA Security+ SY0-701",
+  "description": "100 Questions & Answers practice collection",
+  "domains": [
+    {
+      "id": 1,
+      "name": "General Security Concepts",
+      "weight": "12%",
+      "questions": [
+        {
+          "id": "Q1",
+          "question": "Which of the following ensures that a sender cannot deny sending a message?",
+          "options": {
+            "A": "Encryption",
+            "B": "Hashing",
+            "C": "Digital Signature",
+            "D": "Symmetric Key Exchange"
+          },
+          "answer": "C",
+          "explanation": "Digital signatures ensure non-repudiation — proving who sent the data."
+        },
+        {
+          "id": "Q4",
+          "question": "A company needs to prevent unauthorized devices from connecting to its internal network. What technology should be used?",
+          "options": {
+            "A": "Firewall",
+            "B": "VPN",
+            "C": "NAC (Network Access Control)",
+            "D": "IDS"
+          },
+          "answer": "C",
+          "explanation": "NAC checks device health and enforces policies before allowing network access."
+        },
+        {
+          "id": "Q24",
+          "question": "Which concept ensures that sensitive data is only accessible to authorized individuals?",
+          "options": {
+            "A": "Integrity",
+            "B": "Confidentiality",
+            "C": "Availability",
+            "D": "Authentication"
+          },
+          "answer": "B",
+          "explanation": "Confidentiality ensures sensitive data isn't disclosed to unauthorized users."
+        },
+        {
+          "id": "Q31",
+          "question": "Which principle ensures that users are granted only the access necessary to perform their job functions?",
+          "options": {
+            "A": "Separation of Duties",
+            "B": "Need-to-Know",
+            "C": "Least Privilege",
+            "D": "Role-Based Access Control"
+          },
+          "answer": "C",
+          "explanation": "Least privilege gives users only necessary access rights to do their jobs."
+        },
+        {
+          "id": "Q44",
+          "question": "Which protocol secures email communication by digitally signing and encrypting messages?",
+          "options": {
+            "A": "TLS",
+            "B": "S/MIME",
+            "C": "SSH",
+            "D": "SSL"
+          },
+          "answer": "B",
+          "explanation": "S/MIME secures email with digital signatures and encryption."
+        },
+        {
+          "id": "Q45",
+          "question": "Which type of control is implementing a security awareness training program?",
+          "options": {
+            "A": "Physical",
+            "B": "Technical",
+            "C": "Preventive",
+            "D": "Administrative"
+          },
+          "answer": "D",
+          "explanation": "Security training programs are administrative controls (policy/procedure related)."
+        },
+        {
+          "id": "Q53",
+          "question": "Which of the following is MOST critical to maintain when preserving digital evidence?",
+          "options": {
+            "A": "Full Disk Encryption",
+            "B": "Legal Hold",
+            "C": "Chain of Custody",
+            "D": "Incident Triage"
+          },
+          "answer": "C",
+          "explanation": "Chain of custody ensures evidence integrity for legal use."
+        },
+        {
+          "id": "Q78",
+          "question": "Which method ensures that a user cannot deny performing an action, such as sending an email?",
+          "options": {
+            "A": "Non-Repudiation",
+            "B": "Availability",
+            "C": "Encryption",
+            "D": "Role-Based Access Control"
+          },
+          "answer": "A",
+          "explanation": "Non-repudiation ensures proof of actions like sending emails."
+        },
+        {
+          "id": "Q91",
+          "question": "Which of the following terms describes preventing unauthorized access by forcing a user to authenticate again after a period of inactivity?",
+          "options": {
+            "A": "Session Lock",
+            "B": "Password Complexity",
+            "C": "Single Sign-On",
+            "D": "Federation"
+          },
+          "answer": "A",
+          "explanation": "Session locks require reauthentication after inactivity to prevent unauthorized access."
+        },
+        {
+          "id": "Q93",
+          "question": "Which component is critical for ensuring confidentiality when sending sensitive data across the Internet?",
+          "options": {
+            "A": "Hashing",
+            "B": "Encryption",
+            "C": "Load Balancing",
+            "D": "IDS"
+          },
+          "answer": "B",
+          "explanation": "Encryption protects data confidentiality during transmission."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Threats, Vulnerabilities, and Mitigations",
+      "weight": "22%",
+      "questions": [
+        {
+          "id": "Q2",
+          "question": "Which type of threat actor is MOST likely to have the greatest resources and patience for an extended attack?",
+          "options": {
+            "A": "Insider",
+            "B": "Nation-State",
+            "C": "Script Kiddie",
+            "D": "Hacktivist"
+          },
+          "answer": "B",
+          "explanation": "Nation-state actors have the highest resources, skills, and patience for prolonged attacks."
+        },
+        {
+          "id": "Q3",
+          "question": "What type of attack involves inserting malicious code into a legitimate web application to steal information from users?",
+          "options": {
+            "A": "Phishing",
+            "B": "SQL Injection",
+            "C": "Cross-Site Scripting (XSS)",
+            "D": "DNS Spoofing"
+          },
+          "answer": "C",
+          "explanation": "XSS injects malicious scripts into web apps to steal session cookies, data, etc."
+        },
+        {
+          "id": "Q8",
+          "question": "Which of the following would BEST help mitigate risks associated with phishing attacks?",
+          "options": {
+            "A": "IDS",
+            "B": "Security Awareness Training",
+            "C": "Firewall Rules",
+            "D": "Password Complexity Requirements"
+          },
+          "answer": "B",
+          "explanation": "Training users helps them recognize phishing attempts and avoid falling victim."
+        },
+        {
+          "id": "Q9",
+          "question": "Which risk response involves buying cyber insurance?",
+          "options": {
+            "A": "Accept",
+            "B": "Mitigate",
+            "C": "Transfer",
+            "D": "Avoid"
+          },
+          "answer": "C",
+          "explanation": "Buying insurance transfers the financial risk to another party."
+        },
+        {
+          "id": "Q11",
+          "question": "Which term describes an attack where an unauthorized device connects to a corporate wireless network?",
+          "options": {
+            "A": "Rogue AP",
+            "B": "Evil Twin",
+            "C": "Bluejacking",
+            "D": "MAC Spoofing"
+          },
+          "answer": "B",
+          "explanation": "An evil twin is a rogue Wi-Fi access point set up to mimic a legitimate network."
+        },
+        {
+          "id": "Q12",
+          "question": "What type of malware disguises itself as a legitimate program but delivers a malicious payload?",
+          "options": {
+            "A": "Worm",
+            "B": "Ransomware",
+            "C": "Trojan",
+            "D": "Rootkit"
+          },
+          "answer": "C",
+          "explanation": "A trojan appears legitimate but delivers malicious code once executed."
+        },
+        {
+          "id": "Q13",
+          "question": "Which process helps ensure that only needed ports and services are running on a server?",
+          "options": {
+            "A": "Network segmentation",
+            "B": "Baseline configuration",
+            "C": "Change management",
+            "D": "Hardening"
+          },
+          "answer": "D",
+          "explanation": "Hardening reduces attack surface by disabling unnecessary services."
+        },
+        {
+          "id": "Q19",
+          "question": "What is the primary purpose of a honeypot?",
+          "options": {
+            "A": "Encrypt sensitive data",
+            "B": "Divert attackers away from real systems",
+            "C": "Patch vulnerabilities",
+            "D": "Enforce firewall rules"
+          },
+          "answer": "B",
+          "explanation": "Honeypots attract attackers to fake systems to study them."
+        },
+        {
+          "id": "Q28",
+          "question": "Which attack occurs when a malicious actor manipulates a DNS server to redirect traffic to fraudulent websites?",
+          "options": {
+            "A": "DNS Poisoning",
+            "B": "Domain Hijacking",
+            "C": "IP Spoofing",
+            "D": "ARP Poisoning"
+          },
+          "answer": "A",
+          "explanation": "DNS poisoning manipulates DNS to redirect users to malicious sites."
+        },
+        {
+          "id": "Q29",
+          "question": "A company requires users to authenticate once and then have access to multiple systems without re-entering credentials. Which solution BEST meets this requirement?",
+          "options": {
+            "A": "Federation",
+            "B": "LDAP",
+            "C": "Multifactor Authentication",
+            "D": "VPN"
+          },
+          "answer": "A",
+          "explanation": "Federation allows single authentication across multiple domains or systems."
+        },
+        {
+          "id": "Q36",
+          "question": "During which incident response phase would you isolate a compromised server?",
+          "options": {
+            "A": "Recovery",
+            "B": "Containment",
+            "C": "Lessons Learned",
+            "D": "Identification"
+          },
+          "answer": "B",
+          "explanation": "Containment limits the spread of the incident, like isolating a server."
+        },
+        {
+          "id": "Q40",
+          "question": "An attacker sends unsolicited Bluetooth messages to nearby devices. What attack is this?",
+          "options": {
+            "A": "Bluesnarfing",
+            "B": "Bluebugging",
+            "C": "Bluejacking",
+            "D": "Bluespoofing"
+          },
+          "answer": "C",
+          "explanation": "Bluejacking involves sending unsolicited Bluetooth messages to devices."
+        },
+        {
+          "id": "Q46",
+          "question": "What is the MOST appropriate tool to use when wanting to aggregate, correlate, and analyze logs from multiple systems?",
+          "options": {
+            "A": "VPN",
+            "B": "Firewall",
+            "C": "SIEM",
+            "D": "NAC"
+          },
+          "answer": "C",
+          "explanation": "A SIEM collects and analyzes logs from across the enterprise."
+        },
+        {
+          "id": "Q49",
+          "question": "An attacker successfully tricks a user into giving up login credentials via a fake login page. What attack technique was used?",
+          "options": {
+            "A": "Spear Phishing",
+            "B": "Vishing",
+            "C": "Smishing",
+            "D": "Pharming"
+          },
+          "answer": "A",
+          "explanation": "Spear phishing targets individuals with highly customized fake login pages."
+        },
+        {
+          "id": "Q54",
+          "question": "A company configures a cloud storage bucket and mistakenly leaves it open to the public. What type of vulnerability is this?",
+          "options": {
+            "A": "Zero-Day",
+            "B": "Misconfiguration",
+            "C": "Insider Threat",
+            "D": "Malware Infection"
+          },
+          "answer": "B",
+          "explanation": "Leaving a cloud bucket public is a classic misconfiguration vulnerability."
+        },
+        {
+          "id": "Q58",
+          "question": "What is the purpose of tokenization in data security?",
+          "options": {
+            "A": "Encrypt sensitive data",
+            "B": "Replace sensitive data with non-sensitive placeholders",
+            "C": "Hash sensitive data",
+            "D": "Create a secure communication channel"
+          },
+          "answer": "B",
+          "explanation": "Tokenization replaces real data with fake tokens to protect sensitive information."
+        },
+        {
+          "id": "Q61",
+          "question": "Which of the following is a PRIMARY characteristic of a rootkit?",
+          "options": {
+            "A": "Encrypts files and demands ransom",
+            "B": "Hides its existence by manipulating the OS",
+            "C": "Replicates itself across the network",
+            "D": "Sends unsolicited messages via Bluetooth"
+          },
+          "answer": "B",
+          "explanation": "Rootkits hide their presence by modifying OS functions to avoid detection."
+        },
+        {
+          "id": "Q68",
+          "question": "Which tool is specifically designed to discover vulnerabilities in a system but NOT exploit them?",
+          "options": {
+            "A": "Penetration Test",
+            "B": "Exploit Framework",
+            "C": "Vulnerability Scanner",
+            "D": "SIEM"
+          },
+          "answer": "C",
+          "explanation": "Vulnerability scanners detect weaknesses without active exploitation."
+        },
+        {
+          "id": "Q69",
+          "question": "An employee receives a fake call pretending to be IT support asking for a password. What attack is this?",
+          "options": {
+            "A": "Phishing",
+            "B": "Vishing",
+            "C": "Smishing",
+            "D": "Spear Phishing"
+          },
+          "answer": "B",
+          "explanation": "Vishing is phishing conducted over the telephone."
+        },
+        {
+          "id": "Q76",
+          "question": "What technique is used by attackers to overload a server with requests, causing service disruption?",
+          "options": {
+            "A": "SQL Injection",
+            "B": "DNS Poisoning",
+            "C": "DDoS Attack",
+            "D": "ARP Spoofing"
+          },
+          "answer": "C",
+          "explanation": "Distributed Denial of Service floods a server with traffic."
+        },
+        {
+          "id": "Q79",
+          "question": "An attacker exploits a race condition in a web application. What is this an example of?",
+          "options": {
+            "A": "Improper Input Handling",
+            "B": "Application Logic Flaw",
+            "C": "Secure Coding Practice",
+            "D": "Race Attack Vulnerability"
+          },
+          "answer": "D",
+          "explanation": "Race conditions exploit timing issues in applications."
+        },
+        {
+          "id": "Q96",
+          "question": "An attacker uses a vulnerability in a software program that has not yet been patched. What kind of attack is this?",
+          "options": {
+            "A": "Zero-Day",
+            "B": "Man-in-the-Middle",
+            "C": "Cross-Site Scripting",
+            "D": "Phishing"
+          },
+          "answer": "A",
+          "explanation": "Zero-day attacks exploit unknown or unpatched vulnerabilities."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Security Architecture",
+      "weight": "18%",
+      "questions": [
+        {
+          "id": "Q5",
+          "question": "Which backup type saves only the changes made since the last full backup?",
+          "options": {
+            "A": "Incremental",
+            "B": "Differential",
+            "C": "Full",
+            "D": "Snapshot"
+          },
+          "answer": "A",
+          "explanation": "Incremental backup captures only changes since the last full backup."
+        },
+        {
+          "id": "Q6",
+          "question": "What control type is a biometric fingerprint scanner?",
+          "options": {
+            "A": "Technical",
+            "B": "Administrative",
+            "C": "Physical",
+            "D": "Compensating"
+          },
+          "answer": "C",
+          "explanation": "Biometric scanners are physical controls that authenticate users."
+        },
+        {
+          "id": "Q7",
+          "question": "Which wireless security protocol is the most secure for corporate environments?",
+          "options": {
+            "A": "WEP",
+            "B": "WPA",
+            "C": "WPA2-PSK",
+            "D": "WPA3-Enterprise"
+          },
+          "answer": "D",
+          "explanation": "WPA3-Enterprise is the most secure option for business wireless networks."
+        },
+        {
+          "id": "Q14",
+          "question": "A database administrator is setting access so that users only have permission to view certain data. Which principle is being applied?",
+          "options": {
+            "A": "Separation of Duties",
+            "B": "Need-to-Know",
+            "C": "Non-repudiation",
+            "D": "Risk Transference"
+          },
+          "answer": "B",
+          "explanation": "Need-to-know restricts data access to only necessary users."
+        },
+        {
+          "id": "Q15",
+          "question": "Which option BEST describes a warm site in disaster recovery planning?",
+          "options": {
+            "A": "Fully operational copy of the production environment",
+            "B": "Facility with basic hardware but not real-time data",
+            "C": "Empty building with power and Internet only",
+            "D": "Vendor-provided cloud backup solution"
+          },
+          "answer": "B",
+          "explanation": "Warm sites have equipment ready but need configuration and data loading."
+        },
+        {
+          "id": "Q18",
+          "question": "Which type of access control is enforced by system policies rather than user discretion?",
+          "options": {
+            "A": "DAC",
+            "B": "RBAC",
+            "C": "ABAC",
+            "D": "MAC"
+          },
+          "answer": "D",
+          "explanation": "Mandatory Access Control (MAC) strictly enforces security policies."
+        },
+        {
+          "id": "Q22",
+          "question": "An attacker is trying multiple passwords against many different user accounts. What is this called?",
+          "options": {
+            "A": "Dictionary Attack",
+            "B": "Brute Force Attack",
+            "C": "Password Spraying",
+            "D": "Rainbow Table Attack"
+          },
+          "answer": "C",
+          "explanation": "Password spraying tries common passwords across many accounts to avoid lockout."
+        },
+        {
+          "id": "Q26",
+          "question": "Which of the following technologies uses security groups and microsegmentation to enhance cloud security?",
+          "options": {
+            "A": "VPNs",
+            "B": "Infrastructure as Code",
+            "C": "Cloud-native firewalls",
+            "D": "Software-Defined Networking (SDN)"
+          },
+          "answer": "D",
+          "explanation": "SDN uses segmentation and programmable security in cloud environments."
+        },
+        {
+          "id": "Q27",
+          "question": "A system administrator wants to monitor failed login attempts centrally. Which system should be deployed?",
+          "options": {
+            "A": "SIEM",
+            "B": "NAC",
+            "C": "DLP",
+            "D": "SOAR"
+          },
+          "answer": "A",
+          "explanation": "SIEM collects and analyzes logs, including login failures."
+        },
+        {
+          "id": "Q32",
+          "question": "An attacker captures data from a public Wi-Fi network without connecting to it. Which attack is being performed?",
+          "options": {
+            "A": "Evil Twin",
+            "B": "On-Path Attack (MITM)",
+            "C": "Passive Eavesdropping",
+            "D": "Session Hijacking"
+          },
+          "answer": "C",
+          "explanation": "Passive eavesdropping listens to network traffic without active interception."
+        },
+        {
+          "id": "Q35",
+          "question": "Which of the following technologies BEST protects against on-path (Man-in-the-Middle) attacks?",
+          "options": {
+            "A": "VLAN",
+            "B": "IPS",
+            "C": "VPN",
+            "D": "RAID"
+          },
+          "answer": "C",
+          "explanation": "VPNs encrypt traffic, preventing interception and tampering in on-path attacks."
+        },
+        {
+          "id": "Q42",
+          "question": "Which access control method enforces strict policies based on security labels such as \"Confidential\" or \"Top Secret\"?",
+          "options": {
+            "A": "DAC",
+            "B": "RBAC",
+            "C": "MAC",
+            "D": "ABAC"
+          },
+          "answer": "C",
+          "explanation": "Mandatory Access Control uses labels like \"Top Secret\" to strictly control access."
+        },
+        {
+          "id": "Q47",
+          "question": "Which of the following would MOST help prevent unauthorized physical access to a data center?",
+          "options": {
+            "A": "IDS",
+            "B": "Biometric Access Controls",
+            "C": "VPN",
+            "D": "Anti-Malware"
+          },
+          "answer": "B",
+          "explanation": "Biometrics (like fingerprints) are effective physical security measures."
+        },
+        {
+          "id": "Q48",
+          "question": "What security concept involves separating services and functions into isolated containers to minimize the attack surface?",
+          "options": {
+            "A": "Microsegmentation",
+            "B": "Defense in Depth",
+            "C": "Least Privilege",
+            "D": "Data Sovereignty"
+          },
+          "answer": "A",
+          "explanation": "Microsegmentation isolates workloads to minimize lateral movement risk."
+        },
+        {
+          "id": "Q55",
+          "question": "Which layer of the OSI model does a firewall operate primarily at?",
+          "options": {
+            "A": "Application",
+            "B": "Transport",
+            "C": "Network",
+            "D": "Data Link"
+          },
+          "answer": "C",
+          "explanation": "Firewalls operate mainly at Layer 3 (Network layer) — managing IP addresses and traffic."
+        },
+        {
+          "id": "Q66",
+          "question": "Which term describes isolating different departments in a network to improve security?",
+          "options": {
+            "A": "Subnetting",
+            "B": "Virtualization",
+            "C": "Network Segmentation",
+            "D": "Packet Filtering"
+          },
+          "answer": "C",
+          "explanation": "Segmentation isolates different parts of the network for better control and security."
+        },
+        {
+          "id": "Q77",
+          "question": "Which of the following devices inspects and filters packets based on application-level data?",
+          "options": {
+            "A": "Traditional Firewall",
+            "B": "Proxy Server",
+            "C": "Next-Generation Firewall (NGFW)",
+            "D": "Router"
+          },
+          "answer": "C",
+          "explanation": "NGFWs inspect packets deeply, including application-level data."
+        },
+        {
+          "id": "Q80",
+          "question": "Which of the following is a benefit of implementing Infrastructure as Code (IaC) securely?",
+          "options": {
+            "A": "Manual configuration of servers",
+            "B": "Consistent and repeatable deployments",
+            "C": "Physical separation of networks",
+            "D": "Encrypted communication tunnels"
+          },
+          "answer": "B",
+          "explanation": "IaC enables secure, automated, consistent infrastructure setup."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Security Operations",
+      "weight": "28%",
+      "questions": [
+        {
+          "id": "Q10",
+          "question": "Which concept is being applied when access to files is based on job roles such as HR, IT, or Accounting?",
+          "options": {
+            "A": "MAC",
+            "B": "DAC",
+            "C": "RBAC",
+            "D": "ABAC"
+          },
+          "answer": "C",
+          "explanation": "Role-Based Access Control (RBAC) assigns permissions based on user job roles."
+        },
+        {
+          "id": "Q16",
+          "question": "Which technology would a company use to detect unauthorized changes to critical system files?",
+          "options": {
+            "A": "DLP",
+            "B": "File Integrity Monitoring (FIM)",
+            "C": "SIEM",
+            "D": "HIDS"
+          },
+          "answer": "B",
+          "explanation": "FIM detects unauthorized changes to files."
+        },
+        {
+          "id": "Q17",
+          "question": "A phishing attack led to a ransomware infection. Which two controls would have BEST prevented the incident? (Choose two.)",
+          "options": {
+            "A": "Data Encryption",
+            "B": "Email Filtering",
+            "C": "Security Awareness Training",
+            "D": "RAID 5"
+          },
+          "answer": "B and C",
+          "explanation": "Filtering blocks phishing emails; training teaches users to recognize them."
+        },
+        {
+          "id": "Q20",
+          "question": "Which incident response phase involves learning lessons and updating the incident response plan after a security event?",
+          "options": {
+            "A": "Detection",
+            "B": "Containment",
+            "C": "Recovery",
+            "D": "Lessons Learned"
+          },
+          "answer": "D",
+          "explanation": "Post-incident analysis improves future responses."
+        },
+        {
+          "id": "Q21",
+          "question": "Which of the following BEST describes a risk mitigation strategy?",
+          "options": {
+            "A": "Ignoring a low-probability event",
+            "B": "Purchasing cyber insurance",
+            "C": "Installing a firewall to block threats",
+            "D": "Documenting a risk acceptance form"
+          },
+          "answer": "C",
+          "explanation": "Mitigation adds controls to reduce risk likelihood or impact."
+        },
+        {
+          "id": "Q23",
+          "question": "What is the purpose of a disaster recovery plan (DRP)?",
+          "options": {
+            "A": "Prevent data breaches",
+            "B": "Maintain operations during an attack",
+            "C": "Restore critical business systems after disruption",
+            "D": "Identify vulnerabilities before attacks occur"
+          },
+          "answer": "C",
+          "explanation": "DRP focuses on system recovery after disaster events."
+        },
+        {
+          "id": "Q25",
+          "question": "Which of the following BEST describes a vulnerability scanner?",
+          "options": {
+            "A": "Blocks malicious traffic at the network perimeter",
+            "B": "Actively exploits vulnerabilities",
+            "C": "Passively identifies potential weaknesses",
+            "D": "Encrypts sensitive communications"
+          },
+          "answer": "C",
+          "explanation": "Vulnerability scanners find weaknesses but don't exploit them."
+        },
+        {
+          "id": "Q30",
+          "question": "Which backup strategy would provide the QUICKEST recovery time in case of a server failure?",
+          "options": {
+            "A": "Full Backup",
+            "B": "Differential Backup",
+            "C": "Incremental Backup",
+            "D": "Snapshot Backup"
+          },
+          "answer": "D",
+          "explanation": "Snapshots allow rapid rollback to a known good system state."
+        },
+        {
+          "id": "Q33",
+          "question": "What is the PRIMARY goal of a business impact analysis (BIA)?",
+          "options": {
+            "A": "Identify and prioritize critical business functions",
+            "B": "Analyze threats against network security",
+            "C": "Determine security control effectiveness",
+            "D": "Perform a penetration test"
+          },
+          "answer": "A",
+          "explanation": "BIA identifies essential processes and their recovery priorities."
+        },
+        {
+          "id": "Q34",
+          "question": "What type of backup method would you use if you want to store only the changes made since the last full backup AND you want fast recovery?",
+          "options": {
+            "A": "Incremental",
+            "B": "Full",
+            "C": "Differential",
+            "D": "Snapshot"
+          },
+          "answer": "C",
+          "explanation": "Differential backups capture changes since last full backup and restore faster than incremental."
+        },
+        {
+          "id": "Q37",
+          "question": "What security principle is enforced when employees are required to use two different passwords for administrative and non-administrative accounts?",
+          "options": {
+            "A": "Separation of Duties",
+            "B": "Least Privilege",
+            "C": "Defense in Depth",
+            "D": "Dual Control"
+          },
+          "answer": "A",
+          "explanation": "Separating credentials for admin and user accounts supports separation of duties."
+        },
+        {
+          "id": "Q38",
+          "question": "Which cloud model allows the customer the MOST control over the operating system and applications?",
+          "options": {
+            "A": "SaaS",
+            "B": "PaaS",
+            "C": "IaaS",
+            "D": "FaaS"
+          },
+          "answer": "C",
+          "explanation": "In Infrastructure as a Service (IaaS), the customer manages OS, apps, and configurations."
+        },
+        {
+          "id": "Q39",
+          "question": "What is a PRIMARY security concern with Infrastructure as Code (IaC)?",
+          "options": {
+            "A": "Outdated server hardware",
+            "B": "Rapid spread of misconfigurations",
+            "C": "Vendor lock-in",
+            "D": "Poor network performance"
+          },
+          "answer": "B",
+          "explanation": "IaC errors can quickly replicate insecure settings across environments."
+        },
+        {
+          "id": "Q41",
+          "question": "Which of the following BEST describes a cold site?",
+          "options": {
+            "A": "Operational data center ready for immediate use",
+            "B": "Empty facility with basic infrastructure like power and HVAC",
+            "C": "Fully equipped center with real-time data replication",
+            "D": "Offsite cloud backup provider"
+          },
+          "answer": "B",
+          "explanation": "A cold site is ready with essentials but needs equipment and data to become operational."
+        },
+        {
+          "id": "Q43",
+          "question": "An employee plugs a personal USB drive into a company workstation without approval. What risk does this primarily represent?",
+          "options": {
+            "A": "Insider Threat",
+            "B": "Phishing Attack",
+            "C": "Supply Chain Attack",
+            "D": "Business Email Compromise"
+          },
+          "answer": "A",
+          "explanation": "Unauthorized devices plugged into company systems pose insider risks."
+        },
+        {
+          "id": "Q50",
+          "question": "Which phase of the incident response process involves finding and removing malware from infected systems?",
+          "options": {
+            "A": "Preparation",
+            "B": "Containment",
+            "C": "Eradication",
+            "D": "Lessons Learned"
+          },
+          "answer": "C",
+          "explanation": "Eradication is when you remove malware or vulnerabilities after containment."
+        },
+        {
+          "id": "Q52",
+          "question": "A company wants to ensure that employees can recover their files after a ransomware attack without paying the ransom. Which control BEST achieves this?",
+          "options": {
+            "A": "IDS",
+            "B": "Regular Offline Backups",
+            "C": "VPN Access",
+            "D": "Email Filtering"
+          },
+          "answer": "B",
+          "explanation": "Offline backups protect against ransomware by providing safe recovery data."
+        },
+        {
+          "id": "Q57",
+          "question": "Which cryptographic concept is used to ensure message integrity?",
+          "options": {
+            "A": "Symmetric Encryption",
+            "B": "Asymmetric Encryption",
+            "C": "Hashing",
+            "D": "Key Exchange"
+          },
+          "answer": "C",
+          "explanation": "Hashing ensures data integrity by generating a fixed fingerprint of data."
+        },
+        {
+          "id": "Q60",
+          "question": "A team uses a sandbox environment to open suspicious files. What type of control is this?",
+          "options": {
+            "A": "Preventive",
+            "B": "Detective",
+            "C": "Corrective",
+            "D": "Compensating"
+          },
+          "answer": "A",
+          "explanation": "Sandboxes are preventive, isolating suspicious files before damage can occur."
+        },
+        {
+          "id": "Q63",
+          "question": "Which wireless security protocol is considered obsolete and should NOT be used?",
+          "options": {
+            "A": "WPA2",
+            "B": "WPA",
+            "C": "WPA3",
+            "D": "WEP"
+          },
+          "answer": "D",
+          "explanation": "WEP is outdated and insecure — easily cracked in minutes."
+        },
+        {
+          "id": "Q64",
+          "question": "A system administrator is deploying security patches to all systems automatically after testing. This is an example of:",
+          "options": {
+            "A": "Change Management",
+            "B": "Patch Management",
+            "C": "Hardening",
+            "D": "Incident Response"
+          },
+          "answer": "B",
+          "explanation": "Patch management involves scheduling and deploying updates systematically."
+        },
+        {
+          "id": "Q70",
+          "question": "A user logs into an internal website using a badge and PIN. What authentication factors are being used?",
+          "options": {
+            "A": "Something you know and something you are",
+            "B": "Something you know and something you have",
+            "C": "Something you have and something you are",
+            "D": "Two instances of something you know"
+          },
+          "answer": "B",
+          "explanation": "PIN = something you know; Badge = something you have."
+        },
+        {
+          "id": "Q73",
+          "question": "Which of the following would MOST effectively prevent malware from executing on endpoints?",
+          "options": {
+            "A": "Application Allowlisting",
+            "B": "IDS Deployment",
+            "C": "SSL/TLS Encryption",
+            "D": "Role-Based Access Control"
+          },
+          "answer": "A",
+          "explanation": "Only approved apps can run, blocking unknown malware."
+        },
+        {
+          "id": "Q81",
+          "question": "Which of the following BEST describes the primary benefit of implementing a SIEM system?",
+          "options": {
+            "A": "Blocking unauthorized access attempts",
+            "B": "Preventing malware infections",
+            "C": "Aggregating and analyzing security logs centrally",
+            "D": "Encrypting sensitive data at rest"
+          },
+          "answer": "C",
+          "explanation": "SIEM systems collect logs from multiple sources for centralized analysis."
+        },
+        {
+          "id": "Q82",
+          "question": "What is the MAIN purpose of a DLP (Data Loss Prevention) system?",
+          "options": {
+            "A": "Detect malware signatures",
+            "B": "Monitor unauthorized data transfers",
+            "C": "Block phishing emails",
+            "D": "Scan networks for vulnerabilities"
+          },
+          "answer": "B",
+          "explanation": "DLP systems prevent sensitive data from leaving the network."
+        },
+        {
+          "id": "Q87",
+          "question": "A SOC analyst notices large outbound traffic to an unknown IP. What is the BEST immediate action?",
+          "options": {
+            "A": "Shut down all network switches",
+            "B": "Disconnect affected systems",
+            "C": "Reboot affected systems",
+            "D": "Call the ISP"
+          },
+          "answer": "B",
+          "explanation": "Disconnect immediately to prevent further data exfiltration."
+        },
+        {
+          "id": "Q90",
+          "question": "What is the FIRST action to take when you detect an active ransomware infection?",
+          "options": {
+            "A": "Pay the ransom",
+            "B": "Disconnect infected systems from the network",
+            "C": "Run antivirus scan",
+            "D": "Contact cloud backup provider"
+          },
+          "answer": "B",
+          "explanation": "Isolate first to stop the spread of ransomware."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Security Program Management and Oversight",
+      "weight": "20%",
+      "questions": [
+        {
+          "id": "Q51",
+          "question": "Which security tool uses signatures and anomaly detection to identify malicious network traffic?",
+          "options": {
+            "A": "Firewall",
+            "B": "SIEM",
+            "C": "IDS",
+            "D": "DLP"
+          },
+          "answer": "C",
+          "explanation": "An IDS detects threats by matching signatures or identifying anomalies."
+        },
+        {
+          "id": "Q56",
+          "question": "What security concept is enforced when two employees are required to approve a wire transfer above a certain dollar amount?",
+          "options": {
+            "A": "Dual Control",
+            "B": "Least Privilege",
+            "C": "Discretionary Access Control",
+            "D": "Federation"
+          },
+          "answer": "A",
+          "explanation": "Dual control requires two people to authorize a sensitive action."
+        },
+        {
+          "id": "Q59",
+          "question": "Which type of backup provides the FASTEST full system recovery after a catastrophic failure?",
+          "options": {
+            "A": "Incremental",
+            "B": "Full Backup",
+            "C": "Differential",
+            "D": "Cloud Backup"
+          },
+          "answer": "B",
+          "explanation": "Full backups allow the quickest recovery without relying on incremental data restoration."
+        },
+        {
+          "id": "Q62",
+          "question": "An organization wants to minimize data loss during a disaster. Which metric defines the maximum amount of data loss acceptable?",
+          "options": {
+            "A": "RTO",
+            "B": "MTD",
+            "C": "RPO",
+            "D": "ALE"
+          },
+          "answer": "C",
+          "explanation": "Recovery Point Objective defines the maximum acceptable data loss."
+        },
+        {
+          "id": "Q65",
+          "question": "What type of malware restricts access to a system until payment is made?",
+          "options": {
+            "A": "Trojan",
+            "B": "Worm",
+            "C": "Spyware",
+            "D": "Ransomware"
+          },
+          "answer": "D",
+          "explanation": "Ransomware encrypts systems/files and demands payment for access."
+        },
+        {
+          "id": "Q67",
+          "question": "What concept does the principle of \"never trust, always verify\" relate to?",
+          "options": {
+            "A": "VPN",
+            "B": "Zero Trust",
+            "C": "Single Sign-On",
+            "D": "Role-Based Access Control"
+          },
+          "answer": "B",
+          "explanation": "Zero Trust always requires verification, regardless of network location."
+        },
+        {
+          "id": "Q71",
+          "question": "Which technology allows secure remote access to a corporate network by encrypting all traffic?",
+          "options": {
+            "A": "VLAN",
+            "B": "IDS",
+            "C": "VPN",
+            "D": "Proxy Server"
+          },
+          "answer": "C",
+          "explanation": "A VPN encrypts data between remote users and corporate networks."
+        },
+        {
+          "id": "Q72",
+          "question": "An employee leaves a confidential document on a shared printer. What kind of risk is this?",
+          "options": {
+            "A": "Insider Threat",
+            "B": "Physical Security Risk",
+            "C": "Supply Chain Risk",
+            "D": "Malware Infection"
+          },
+          "answer": "B",
+          "explanation": "Leaving sensitive documents in shared spaces risks unauthorized access."
+        },
+        {
+          "id": "Q74",
+          "question": "A company requires that users verify their identity using a username, password, and fingerprint scan. This is an example of:",
+          "options": {
+            "A": "Multi-Factor Authentication",
+            "B": "Federation",
+            "C": "SSO",
+            "D": "Kerberos Authentication"
+          },
+          "answer": "A",
+          "explanation": "Using two or more different authentication types (password + fingerprint)."
+        },
+        {
+          "id": "Q75",
+          "question": "Which security principle ensures that critical functions are divided among multiple people to prevent fraud?",
+          "options": {
+            "A": "Least Privilege",
+            "B": "Separation of Duties",
+            "C": "Job Rotation",
+            "D": "Dual Control"
+          },
+          "answer": "B",
+          "explanation": "No one person controls all parts of a critical process, preventing fraud."
+        },
+        {
+          "id": "Q83",
+          "question": "An attacker tricks a user into resetting their password by spoofing a legitimate password reset page. What kind of attack is this?",
+          "options": {
+            "A": "Phishing",
+            "B": "SQL Injection",
+            "C": "Session Hijacking",
+            "D": "Privilege Escalation"
+          },
+          "answer": "A",
+          "explanation": "Spoofed password reset pages are classic phishing attacks."
+        },
+        {
+          "id": "Q84",
+          "question": "Which backup method copies only the files that have changed since the last backup, no matter what type it was?",
+          "options": {
+            "A": "Full",
+            "B": "Incremental",
+            "C": "Differential",
+            "D": "Snapshot"
+          },
+          "answer": "B",
+          "explanation": "Incremental backups save changes since the last backup (full or incremental)."
+        },
+        {
+          "id": "Q85",
+          "question": "What does the principle of Defense in Depth emphasize?",
+          "options": {
+            "A": "Using multiple layers of security controls",
+            "B": "Deploying only firewalls at the network perimeter",
+            "C": "Using two-factor authentication for all logins",
+            "D": "Relying primarily on SIEM alerts"
+          },
+          "answer": "A",
+          "explanation": "Defense in Depth means no single point of failure."
+        },
+        {
+          "id": "Q86",
+          "question": "Which of the following is an example of an administrative control?",
+          "options": {
+            "A": "Fire extinguisher in server room",
+            "B": "Firewall rules",
+            "C": "Security awareness policy",
+            "D": "Encryption of data at rest"
+          },
+          "answer": "C",
+          "explanation": "Administrative controls include policies and procedures."
+        },
+        {
+          "id": "Q88",
+          "question": "Which term describes unauthorized commands sent from a user's browser to a trusted website?",
+          "options": {
+            "A": "Cross-Site Scripting (XSS)",
+            "B": "SQL Injection",
+            "C": "Command Injection",
+            "D": "Cross-Site Request Forgery (CSRF)"
+          },
+          "answer": "D",
+          "explanation": "CSRF tricks users into executing unwanted actions."
+        },
+        {
+          "id": "Q89",
+          "question": "Which of the following technologies enables a single identity to access multiple applications across different domains?",
+          "options": {
+            "A": "Multifactor Authentication",
+            "B": "Federation",
+            "C": "VPN",
+            "D": "Zero Trust"
+          },
+          "answer": "B",
+          "explanation": "Federation allows single login across multiple organizations/systems."
+        },
+        {
+          "id": "Q92",
+          "question": "What type of test involves assessing the physical, administrative, and technical safeguards without exploiting vulnerabilities?",
+          "options": {
+            "A": "Vulnerability Scan",
+            "B": "Penetration Test",
+            "C": "Risk Assessment",
+            "D": "Business Impact Analysis"
+          },
+          "answer": "C",
+          "explanation": "Risk assessments evaluate safeguards without actively exploiting vulnerabilities."
+        },
+        {
+          "id": "Q94",
+          "question": "What is the purpose of implementing redundant power supplies in servers?",
+          "options": {
+            "A": "Improve encryption performance",
+            "B": "Increase network bandwidth",
+            "C": "Enhance system availability",
+            "D": "Provide faster processing"
+          },
+          "answer": "C",
+          "explanation": "Redundant power supplies help keep servers running during power failures."
+        },
+        {
+          "id": "Q95",
+          "question": "Which of the following MOST accurately defines tokenization?",
+          "options": {
+            "A": "Encrypting all data in a database",
+            "B": "Replacing sensitive data elements with a unique identifier",
+            "C": "Hashing user passwords before storage",
+            "D": "Obfuscating source code to protect intellectual property"
+          },
+          "answer": "B",
+          "explanation": "Tokenization swaps real data for safe, meaningless tokens."
+        },
+        {
+          "id": "Q97",
+          "question": "What is the BEST method to mitigate the impact of social engineering attacks?",
+          "options": {
+            "A": "Install firewalls",
+            "B": "Security Awareness Training",
+            "C": "Regular Penetration Testing",
+            "D": "Conduct Full Backups"
+          },
+          "answer": "B",
+          "explanation": "Training users helps them recognize and avoid social engineering."
+        },
+        {
+          "id": "Q98",
+          "question": "Which type of malware is specifically designed to provide persistent, hidden access to a compromised system?",
+          "options": {
+            "A": "Ransomware",
+            "B": "Trojan",
+            "C": "Rootkit",
+            "D": "Worm"
+          },
+          "answer": "C",
+          "explanation": "Rootkits maintain hidden, persistent access by deeply integrating with systems."
+        },
+        {
+          "id": "Q99",
+          "question": "A backup strategy uses the Grandfather-Father-Son method. What is this primarily designed to achieve?",
+          "options": {
+            "A": "Ensure zero data loss",
+            "B": "Maintain multiple historical versions of backups",
+            "C": "Accelerate disaster recovery",
+            "D": "Improve real-time replication"
+          },
+          "answer": "B",
+          "explanation": "Grandfather-Father-Son rotation ensures backup version history."
+        },
+        {
+          "id": "Q100",
+          "question": "What security tool intercepts and controls traffic between a user and the Internet to enforce company policies?",
+          "options": {
+            "A": "Firewall",
+            "B": "VPN",
+            "C": "Proxy Server",
+            "D": "Load Balancer"
+          },
+          "answer": "C",
+          "explanation": "Proxies filter, control, and log user Internet traffic to enforce policies."
+        }
+      ]
+    }
+  ]
+}
