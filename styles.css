@@ -514,7 +514,7 @@ button:disabled {
     }
 
     .navigation {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .results-actions {
