@@ -19,32 +19,58 @@
     </div>
 
     <script>
-        // Load available exams
-        const exams = [
-            {
-                id: 'comptia_sec_plus',
-                name: 'CompTIA Security+ SY0-701',
-                description: '100 Questions & Answers practice collection',
-                dataFile: 'mats_json/comptia_sec_plus.json'
-            }
-            // Add more exams here by adding new JSON files to mats_json/
+        // Auto-load exam list - Just add JSON filenames here!
+        // The title and description are automatically extracted from each JSON file
+        const examFiles = [
+            'comptia_sec_plus.json',
+            'security_plus_questions_v2.json'
         ];
 
         const examListContainer = document.getElementById('exam-list');
 
-        // Display exams
-        function displayExams() {
+        // Fetch and display exams automatically
+        async function loadAndDisplayExams() {
+            examListContainer.innerHTML = '<div class="loading">Loading available exams...</div>';
+
+            const exams = [];
+
+            // Fetch each JSON file and extract metadata
+            for (const filename of examFiles) {
+                try {
+                    const response = await fetch(`mats_json/${filename}`);
+                    if (response.ok) {
+                        const data = await response.json();
+                        exams.push({
+                            filename: filename,
+                            title: data.title || 'Untitled Exam',
+                            description: data.description || 'No description available',
+                            dataFile: `mats_json/${filename}`
+                        });
+                    } else {
+                        console.error(`Failed to load ${filename}`);
+                    }
+                } catch (error) {
+                    console.error(`Error loading ${filename}:`, error);
+                }
+            }
+
+            // Display the exams
             examListContainer.innerHTML = '';
+
+            if (exams.length === 0) {
+                examListContainer.innerHTML = '<div class="loading">No exams found</div>';
+                return;
+            }
 
             exams.forEach(exam => {
                 const examCard = document.createElement('div');
                 examCard.className = 'exam-card';
                 examCard.innerHTML = `
-                    <h2>${exam.name}</h2>
+                    <h2>${exam.title}</h2>
                     <p>${exam.description}</p>
                     <div class="exam-buttons">
-                        <button onclick="startExam('${exam.dataFile}', '${exam.name}', null)" class="btn-primary">Start Full Quiz</button>
-                        <button onclick="startExam('${exam.dataFile}', '${exam.name}', 10)" class="btn-secondary">Quick Quiz (10 Questions)</button>
+                        <button onclick="startExam('${exam.dataFile}', '${exam.title}', null)" class="btn-primary">Start Full Quiz</button>
+                        <button onclick="startExam('${exam.dataFile}', '${exam.title}', 10)" class="btn-secondary">Quick Quiz (10 Questions)</button>
                     </div>
                 `;
                 examListContainer.appendChild(examCard);
@@ -61,7 +87,7 @@
         }
 
         // Initialize
-        displayExams();
+        loadAndDisplayExams();
     </script>
 </body>
 </html>

@@ -21,6 +21,13 @@ desktop.ini
 *.7z
 *.tar.gz
 
+# Python files
+*.py
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
 # Study materials (not needed for the app)
 mats/
 
