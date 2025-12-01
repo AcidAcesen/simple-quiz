@@ -21,5 +21,8 @@ desktop.ini
 *.7z
 *.tar.gz
 
+# Study materials (not needed for the app)
+mats/
+
 # Claude Code
 .claude/

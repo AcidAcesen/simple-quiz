@@ -78,11 +78,9 @@ simple-quiz/
 ├── quiz.html               # Quiz interface
 ├── app.js                  # Quiz logic and functionality
 ├── styles.css              # Styling
-├── src/
-│   └── mats_json/
-│       └── comptia_sec_plus.json  # Question bank (100 questions)
-├── mats/
-│   └── comptia_sec+.pdf    # Study materials
+├── README.md               # Documentation
+├── mats_json/
+│   └── comptia_sec_plus.json  # Question bank (100 questions)
 └── QuizAPP 1.0/
     └── android/
         └── app-release.apk # Android application
@@ -90,7 +88,7 @@ simple-quiz/
 
 ## 🔧 How It Works
 
-1. **Data Loading**: Quiz loads questions from JSON file (`src/mats_json/comptia_sec_plus.json`)
+1. **Data Loading**: Quiz loads questions from JSON file (`mats_json/comptia_sec_plus.json`)
 2. **Randomization**: Questions and answer options are shuffled for each session
 3. **Question Tracking**: Progress tracked across all domains
 4. **Score Calculation**: Performance calculated overall and per domain
@@ -104,7 +102,7 @@ simple-quiz/
 
 The system is designed to be easily extensible. To add a new exam:
 
-1. Create a new JSON file in `src/mats_json/` (follow the existing format)
+1. Create a new JSON file in `mats_json/` (follow the existing format)
 2. Add the exam configuration to `index.html`:
 
 ```javascript
@@ -112,7 +110,7 @@ The system is designed to be easily extensible. To add a new exam:
     id: 'exam_name',
     name: 'Exam Display Name',
     description: 'Number of questions description',
-    dataFile: 'src/mats_json/your_exam.json'
+    dataFile: 'mats_json/your_exam.json'
 }
 ```
 
